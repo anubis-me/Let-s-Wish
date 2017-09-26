@@ -38,6 +38,9 @@ var app=angular.module('playerRoute',['ngRoute'])
                 controller  :'createCtrl',
                 controllerAs: 'register'
             })
+            .when('/help',{
+                templateUrl: 'app/views/pages/about.html'
+            })
 
             .otherwise({ redirectTo: '/createwish' }); // If user tries to access any other route, redirect to home page
 

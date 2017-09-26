@@ -56,4 +56,7 @@ angular.module('wishController',['wishService'])
         this.routechan = function(){
             $location.path('/');
         }
+        this.helps = function () {
+            $location.path('/help');
+        }
     });
