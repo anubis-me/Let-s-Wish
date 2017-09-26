@@ -59,7 +59,12 @@ module.exports = function (router) {
                 res.json({success:false, message:err});
             }
             else {
-                res.json({success: true, messages:wishing.messages, views:wishing.views, fest:wishing.fest, counter:wishing.counter });
+                if(!wishing){
+                    res.json({success:false});
+                }
+                else{
+                    res.json({success: true, messages:wishing.messages, views:wishing.views, fest:wishing.fest, counter:wishing.counter });
+                }
             }
         });
     });
