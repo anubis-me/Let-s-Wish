@@ -6,7 +6,33 @@
   "display": "fullscreen",
   "background_color": "#000",
   "description": "A simple wishing app",
-  "icons": [{
+  "icons": [
+    {
+      "src": "assets/images/festival.png",
+      "sizes": "48x48",
+     "type": "image/png"
+    },
+    {
+      "src": "assets/images/festival.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/festival.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/festival.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/festival.png",
+      "sizes": "168x168",
+      "type": "image/png"
+    },
+    {
     "src": "assets/images/festival.png",
     "sizes": "192x192",
     "type": "image/png"
@@ -15,6 +41,6 @@
     "platform": "web"
   }, {
     "platform": "play",
-    "url": "https://wishing-app.herokuapp.com/createwish"
+    "url": "https://lets-wish.herokuapp.com/createwish"
   }]
 }
