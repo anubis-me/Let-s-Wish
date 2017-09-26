@@ -1,5 +1,5 @@
 {
-  "name": "Wishing App",
+  "name": "lets-wish",
   "version": "1.0.0",
   "description": "Here is a wish for you",
   "main": "server.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anubis-me/newWish.git"
+    "url": "git+https://github.com/anubis-me/let-s-Wish.git"
   },
   "keywords": [
     "Art",
@@ -19,9 +19,9 @@
   "author": "Abhinav Gupta",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/anubis-me/newWish/issues"
+    "url": "https://github.com/anubis-me/let-s-Wish/issues"
   },
-  "homepage": "https://github.com/anubis-me/newWish#readme",
+  "homepage": "https://github.com/anubis-me/let-s-Wish#readme",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.1",
