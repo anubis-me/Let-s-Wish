@@ -1,0 +1,20 @@
+{
+  "name": "Wishing App",
+  "short_name": "Wisher",
+  "start_url": "/?utm_source=homescreen",
+  "theme_color": "#536878",
+  "display": "fullscreen",
+  "background_color": "#000",
+  "description": "A simple wishing app",
+  "icons": [{
+    "src": "assets/images/festival.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }],
+  "related_applications": [{
+    "platform": "web"
+  }, {
+    "platform": "play",
+    "url": "https://wishing-app.herokuapp.com/createwish"
+  }]
+}

@@ -1,0 +1,102 @@
+<style>
+    html{
+        width: 100%;
+        background-color: #122b40;
+    }
+    body{
+        background-color: #09091a;
+        width: 100%;
+    }
+    h1 {
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .neon {
+        color: #fff;
+        text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #0ff,
+                0 0 80px #0ff,
+                0 0 90px #0ff,
+                0 0 100px #0ff,
+                0 0 150px #0ff;
+    }
+    .diffuse-light {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        border: none;
+        font: normal 30px/normal "Comic Sans MS", cursive, sans-serif;
+        color: rgba(255,255,255,1);
+        text-align: center;
+        -o-text-overflow: clip;
+        text-overflow: clip;
+        text-shadow: 0 15px 29px rgba(0,0,0,0.0980392) , 10px 20px 5px rgba(0,0,0,0.0470588) , -10px 20px 5px rgba(0,0,0,0.0470588) ;
+        -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+        -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+        -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+        transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    }
+    .diffuse-light:hover {
+        font: normal 30px/normal Verdana, Geneva, sans-serif;
+        text-shadow: 0 -15px 29px rgba(0,0,0,0.0980392) , 10px -20px 5px rgba(0,0,0,0.0470588) , -10px -20px 5px rgba(0,0,0,0.0470588) ;
+    }
+    table{
+        width: 100%;
+    }
+</style>
+
+<body style="padding:0; margin:0;background: url(http://image.s6.exacttarget.com/lib/fe9112727d67047576/m/1/madd-bg-1x-2.png) top center no-repeat #09091A;background-color:#09091A;" background="http://image.s6.exacttarget.com/lib/fe9112727d67047576/m/1/madd-bg-1x-2.png"
+      bgcolor="#09091A">
+<img src="http://image.s6.exacttarget.com/lib/fe9112727d67047576/m/1/uber_MADD_Firework111s_v3-15fps-compressor.gif" style="width:100%;max-width:1200px;height:auto;" border="0" class="nope" />
+
+<div style="background: url(http://image.s6.exacttarget.com/lib/fe9112727d67047576/m/1/madd-bg-1x-2.png) top center no-repeat;" class="gmail-bg">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%" height="10%">
+        <table class="container" width="100%" cellpadding="0" cellspacing="0" style="max-width: 850px;">
+            <div class="container" style="font-size:60px;margin-top:40px">
+                <h1 class="neon">{{register.wishtype}}</h1>
+            </div>
+            <!--<img src="Capture.PNG" style="height:100px;width:300px;" width="145" height="22" class="header">-->
+        </table>
+        <!--body-->
+        <table border="0" cellpadding="0" cellspacing="0" style="width:100%;background: url(http://image.s6.exacttarget.com/lib/fe9112727d67047576/m/1/madd-bg-1x-2.png) top center no-repeat;">
+            <div  style="width:100%;height:350px;" >
+                <div style="margin:0 auto;text-align:center">
+                    <div class="diffuse-light">{{register.wishmsg}}</div>
+                </div>
+            </div>
+
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" style="width:100%;background: url(http://image.s6.exacttarget.com/lib/fe9112727d67047576/m/1/madd-bg-1x-2.png) top center no-repeat;">
+            <div ng-show="register.loadmsg" style="margin-top:-90px;padding-bottom:0px;text-align:center">
+                <button class="button" style="margin-left:auto;margin-right:auto;text-align:center;background-color:#eb9316;color: black; " ng-click="register.routechange();">
+                    <h3><b>Click to create wish</b></h3>
+                </button>
+            </div>
+
+            <div ng-show="!register.loadmsg" style="margin-top:-250px;padding-bottom:100px;text-align:center">
+                <button class="button" style="margin-left:auto;margin-right:auto;text-align:center;background-color:#eb9316;color: black; " ng-click="register.mupdate();">
+                    <h2><b>Click Here To See</b></h2>
+                </button>
+            </div>
+
+        </table>
+    </table>
+
+
+</div>
+<footer class="w3-container w3-teal w3-center w3-margin-top"  style="background-color:  #122b40!!important;">
+    <a href="https://www.facebook.com/abhinav3006gupta" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/abhinav_qp/" target="_blank"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.snapchat.com/add/abhinav3006gu" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/Abhi_now3006" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/abhinav-gupta-774a3512a/"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a  ng-click="register.routechan();" ><i><b>webbern</b></i></a>
+</footer>
+
+</body>
+
+</html>

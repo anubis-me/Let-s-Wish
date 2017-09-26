@@ -1,0 +1,39 @@
+{
+  "name": "Wishing App",
+  "version": "1.0.0",
+  "description": "Here is a wish for you",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anubis-me/newWish.git"
+  },
+  "keywords": [
+    "Art",
+    "Tech",
+    "freelance"
+  ],
+  "author": "Abhinav Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anubis-me/newWish/issues"
+  },
+  "homepage": "https://github.com/anubis-me/newWish#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "jsonwebtoken": "^8.0.1",
+    "mongoose": "^4.11.11",
+    "mongoose-title-case": "0.0.4",
+    "mongoose-validator": "^1.3.2",
+    "morgan": "^1.8.2",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0"
+  }
+}

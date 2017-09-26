@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Talent Hunt">
+    <meta name="author" content="Fun">
+
+    <!-- Main Angular Files -->
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/angular-route.js"></script>
+    <script src="assets/js/angular-animate.js"></script>
+
+    <!-- Angular Config/Routes -->
+    <script src="app/auapp.js"></script>
+    <script src="app/route.js"></script>
+
+    <!-- Angular Controllers -->
+    <script src="app/controllers/wishCtrl.js"></script>
+
+    <!-- <script src="app/controllers/emailCtrl.js"></script>
+    <script src="app/controllers/managementCtrl.js"></script>
+    <!-- Angular Services -->
+    <script src="assets/js/light/garland.js" type="text/javascript"></script>
+    <script src="app/services/wishservices.js"></script>
+
+
+    <!-- Cascade Style Sheets -->
+    <link rel="stylesheet" href="assets/css/light/garland.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="manifest"   href="/manifest.json">
+
+    <title>Wish</title>
+</head>
+
+<body ng-app="wishapp">
+<a href="/createwish"><img class="img-responsive2" src="assets/images/festival.png" style="width:150px;position: absolute;margin-top: 10px;margin-left:-35px;"></a>
+<a href="/createwish"><img class="img-responsive2" src="assets/images/festival.png" style="width:150px;position: absolute;margin-top: 10px;margin-left:-15px;"></a>
+
+<div id="garland" class="garland_4">
+    <div id="nums_1">1</div>
+</div>
+
+
+<div class="container">
+    <div ng-view ></div>
+</div>
+
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</body>
+
+</html>
