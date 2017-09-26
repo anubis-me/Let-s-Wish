@@ -41,6 +41,6 @@
     "platform": "web"
   }, {
     "platform": "play",
-    "url": "https://lets-wish.herokuapp.com/createwish"
+    "url": "https://lets-wish.herokuapp.com"
   }]
 }
