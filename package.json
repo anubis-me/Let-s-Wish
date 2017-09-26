@@ -25,7 +25,6 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.1",
-    "clipboard": "^1.7.1",
     "express": "^4.15.4",
     "express-session": "^1.15.5",
     "jsonwebtoken": "^8.0.1",
