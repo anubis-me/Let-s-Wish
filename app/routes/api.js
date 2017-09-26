@@ -63,6 +63,8 @@ module.exports = function (router) {
                     res.json({success:false});
                 }
                 else{
+                    wishing.views = parseInt(wishing.views,10)+1;
+                    wishing.save();
                     res.json({success: true, messages:wishing.messages, views:wishing.views, fest:wishing.fest, counter:wishing.counter });
                 }
             }
