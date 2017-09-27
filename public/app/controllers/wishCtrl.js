@@ -8,15 +8,16 @@ angular.module('wishController',['wishService'])
         //input counter fest type message
         this.regwish = function (regdata) {
             app.regdata.views = "0";
+            app.regdata.counter = app.regdata.counter.replace(/[\s]/g, '');
             app.regdata.uname = app.regdata.counter;
             app.regdata.counter = "-*"+app.regdata.counter+"*#" + Math.round(Math.random() * 100);
             wishing.create(app.regdata).then(function (data) {
                 app.successmsg = false;
-                 if (data.data.success) {
+                if (data.data.success) {
                     app.successmsg = "Your wish has been created now you can share it.";
                     app.pub_url = "wish4you.ga/"+data.data.choice+"?counter="+data.data.counter;
-                    app.whatsapp_url = " wish4you.ga/"+data.data.choice+"?counter="+data.data.counter;
-                  }
+                    app.whatsapp_url = "👌 Awesome app to earn money by sending wishes. 😍 Wish4you.ga/"+data.data.choice+"?counter="+data.data.counter;
+                }
                 else {
 
                     $timeout(function () {
