@@ -38,7 +38,6 @@ angular.module('wishController',['wishService'])
         this.mupdate = function() {
             var cdata ={};
             app.cdata = $location.search();
-            console.log(app.cdata);
             app.loadmsg=false;
             wishing.getmsg(app.cdata).then(function (data) {
                 app.wishtype=false;

@@ -1,0 +1,73 @@
+
+<html><head>
+
+    <style>
+
+        @-webkit-keyframes jello {  from, 11.1%, to {    transform: none;  }
+            22.2% {    transform: skewX(-12.5deg) skewY(-12.5deg);  }
+            33.3% {    transform: skewX(6.25deg) skewY(6.25deg);  }
+            44.4% {    transform: skewX(-3.125deg) skewY(-3.125deg);  }
+            55.5% {    transform: skewX(1.5625deg) skewY(1.5625deg);  }
+            66.6% {    transform: skewX(-0.78125deg) skewY(-0.78125deg);  }
+            77.7% {    transform: skewX(0.390625deg) skewY(0.390625deg);  }
+            88.8% {    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);  }}
+        .jello {  -webkit-animation: jello 3s infinite;  transform-origin: center; -webkit-animation-delay:6s}
+        @-webkit-keyframes hue {
+            from {    -webkit-filter: hue-rotate(0deg);  }
+            to {    -webkit-filter: hue-rotate(-360deg);  }}
+        .m1{position:fixed;left:1%; width:auto;height:100%;top:1%;color:#000;}
+        .m2{position:fixed;right:1%; width:auto;height:100%;top:1%;color:#000;}
+        .diffuse-light{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;border:0;font:normal 26px/normal "Comic Sans MS",cursive,sans-serif;color:black;text-align:center;-o-text-overflow:clip;text-overflow:clip;text-shadow:0 15px 29px rgba(0,0,0,0.0980392),10px 20px 5px rgba(0,0,0,0.0470588),-10px 20px 5px rgba(0,0,0,0.0470588);-webkit-transition:all 200ms cubic-bezier(0.42,0,0.58,1) 10ms;-moz-transition:all 200ms cubic-bezier(0.42,0,0.58,1) 10ms;-o-transition:all 200ms cubic-bezier(0.42,0,0.58,1) 10ms;transition:all 200ms cubic-bezier(0.42,0,0.58,1) 10ms}.diffuse-light:hover{font:normal 26px/normal Verdana,Geneva,sans-serif;text-shadow:0 -15px 29px rgba(0,0,0,0.0980392),10px -20px 5px rgba(0,0,0,0.0470588),-10px -20px 5px rgba(0,0,0,0.0470588)}
+    </style>
+</head>
+
+<body class="bg" id="Dussehra">
+
+    <div class="container">
+
+                <div class="row" style="height: 700px;">
+
+
+                        <p class="center" style="margin-top: 50px;">
+                                    <img class="diwali" style="margin: 0 auto;display: block;" src="assets/images/hdus.png" height="280px" width="100%"/>
+                                    <img class="diwali" style="margin: 0 auto;display: block;" src="assets/images/hdus1.png" height="260px" width="100%"/>
+
+
+                    <div class="diffuse-light" style="margin-top: -340px;">{{register.wishmsg}}</div>
+                  <!--  <div style="width:100%;height:auto;margin-top:20px">
+                        <div style="margin:0 auto;text-align:center">
+                           {{register.wishmsg}}
+                        </div>
+                    </div>
+
+                    -->
+                    <div>
+
+                        <div ng-show="register.loadmsg" style="text-align:center;margin-top: 250px;">
+                            <button class="button" style="margin-left:auto;margin-right:auto;text-align:center;background-color:#f39c12;color:black;border-color:#2c3e50" ng-click="register.routechange();">
+                                <h3><b>Click to create wish</b></h3>
+                            </button>
+                        </div>
+                    <div ng-show="!register.loadmsg" style="text-align:center;">
+                            <button class="button" style="margin-left:auto;margin-right:auto;text-align:center;background-color:#f39c12;color:black;border-color:#2c3e50" ng-click="register.mupdate();">
+                                <h2><b>Click Here To See</b></h2>
+                            </button>
+                        </div>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+<div class="navbar-fixed-bottom">
+    <footer class="w3-container w3-teal w3-center w3-margin-top" style="background-color:#122b40!!important">
+        <a href="https://www.facebook.com/abhinav3006gupta" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/abhinav_qp/" target="_blank"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://www.snapchat.com/add/abhinav3006gu" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+        <a href="https://twitter.com/Abhi_now3006" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/abhinav-gupta-774a3512a/"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <a ng-click="register.routechan();"><i><b>webbern</b></i></a>
+        <a style="float:right" ng-show="register.loadmsg"><b>{{register.uname}}:<i>{{register.views_num}}</b></i></a>
+    </footer>
+
+</body></html>
