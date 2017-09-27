@@ -11,12 +11,10 @@ angular.module('wishController',['wishService'])
             app.regdata.counter = Math.round((Math.random() * 1000000000000000) * 8);
             wishing.create(app.regdata).then(function (data) {
                 app.successmsg = false;
-                app.whatsapp_url = "wish4you.ga/createwish";
-                if (data.data.success) {
+                 if (data.data.success) {
                     app.successmsg = "Your wish has been created now you can share it.";
                     app.pub_url = "wish4you.ga/"+data.data.choice+"?counter="+data.data.counter;
-                    app.whatsapp_url = "whatsapp://send?text=http://wish4you.ga/"+data.data.choice+"?counter="+data.data.counter;
-                }
+                  }
                 else {
 
                     $timeout(function () {
