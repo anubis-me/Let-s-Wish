@@ -8,9 +8,9 @@ angular.module('wishController',['wishService'])
         //input counter fest type message
         this.regwish = function (regdata) {
             app.regdata.views = "0";
-            app.regdata.counter = app.regdata.counter.replace(/[\s]/g, '');
+            app.regdata.counter = app.regdata.counter.replace(/[\s]/g, '-');
             app.regdata.uname = app.regdata.counter;
-            app.regdata.counter = "-*"+app.regdata.counter+"*#" + Math.round(Math.random() * 100);
+            app.regdata.counter = "-"+app.regdata.counter+"-" + Math.round(Math.random() * 100);
             wishing.create(app.regdata).then(function (data) {
                 app.successmsg = false;
                 if (data.data.success) {
@@ -38,6 +38,7 @@ angular.module('wishController',['wishService'])
         this.mupdate = function() {
             var cdata ={};
             app.cdata = $location.search();
+            console.log(app.cdata);
             app.loadmsg=false;
             wishing.getmsg(app.cdata).then(function (data) {
                 app.wishtype=false;
