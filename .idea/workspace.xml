@@ -147,7 +147,7 @@
         <entry file="file://$PROJECT_DIR$/public/app/views/wishing/createwish.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+              <caret line="27" column="61" lean-forward="false" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -587,12 +587,12 @@
       <option name="presentableId" value="Default" />
       <updated>1506406222345</updated>
       <workItem from="1506406225881" duration="30966000" />
-      <workItem from="1506504697468" duration="7254000" />
+      <workItem from="1506504697468" duration="7375000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38220000" />
+    <option name="totallyTimeSpent" value="38341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="754" extended-state="0" />
@@ -1045,7 +1045,7 @@
     <entry file="file://$PROJECT_DIR$/public/app/views/wishing/createwish.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <caret line="27" column="61" lean-forward="false" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
           <folding />
         </state>
       </provider>
