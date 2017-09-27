@@ -21,17 +21,26 @@
         <option value="type2">Blue Fire Cracker</option>
          <option value="type3">Colourful balls</option>
        <!-- <option value="type4">Dusshera</option> --> </select></div> <p style="margin-left: 20px;color: red;">** More themes to be added soon. </p> </div></div> <div class="form-group" style="margin-top: -20px;"> <label for="username" class="cols-sm-2 control-label">Message</label> <div class="cols-sm-10"> <div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span> <textarea type="text" class="form-control" name="username" id="username" placeholder="Enter your Message" ng-model="register.regdata.messages"  required> </textarea> </div> </div> </div> <div class="form-group" > <button type="submit" class="btn btn-lg btn-block login-button" style="background-color:#f0ad4e;color: black;border-color:black;"><b>Create Wish</b></button> </div> </form> </div> <div class="main-login main-center" style="margin-top: 50px;" ng-show="register.successmsg"> <h4><b>Copy and Share this link</b> </h4>
-    <textarea class="input-group" style="background-color:cyan;color:black;bold;width: 101%;height:120px;">{{register.pub_url}}</textarea>
-     <a href="whatsapp://send" data-text="Here is something for you" data-href="{{register.pub_url}}" class="wa_btn wa_btn_s" ><img src="assets/images/w.ico" width="50px" height="40px"></img></a>
-    <p style="margin-left: 20px;color:green;"><b>Wish on Whatsapp & Facebook</b></p>
+    <textarea class="input-group" style="background-color:#e5e5e5;color:black;bold;width: 101%;height:120px;">{{register.pub_url}}</textarea>
+    <p style="margin-left: 20px;color:green;"><b>Wish on Whatsapp & <span style="color: #1e84f2">Facebook</span></b></p>
+
+    <a href="whatsapp://send" data-text="Here is something for you" data-href="{{register.pub_url}}" class="wa_btn wa_btn_s" ><img src="assets/images/w.ico" width="50px" height="40px"></img></a>
        </div>
 
 </div>
 </div><!--<div style="margin:0 auto;text-align:center;" > <button class="button" style="margin-left:auto;margin-right:auto;text-align:center;background-color:#d58512;margin-top: 30px;" ng-click="register.routechan();" > <h5>Click to view sample Wish</h5> </button></div> -->
-<footer class="w3-container w3-teal w3-center w3-margin-top" style="background-color:#e28d2e!important;padding: -5px -5 px;"> <a href="https://www.facebook.com/abhinav3006gupta" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a> <a href="https://www.instagram.com/abhinav_qp/" target="_blank"> <i class="fa fa-instagram w3-hover-opacity"></i></a> <a href="https://www.snapchat.com/add/abhinav3006gu" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a> <a href="https://twitter.com/Abhi_now3006" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a> <a href="https://www.linkedin.com/in/abhinav-gupta-774a3512a/">
-    <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+
+<div class="navbar-fixed-bottom">
+<footer class="w3-container w3-teal w3-center w3-margin-top" style="background-color:#e28d2e!important;padding: -5px -5 px;">
+    <a href="https://www.facebook.com/abhinav3006gupta" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/abhinav_qp/" target="_blank"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.snapchat.com/add/abhinav3006gu" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/Abhi_now3006" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/abhinav-gupta-774a3512a/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
     <a ng-click="register.routechan();" ><i><b>webbern</b></i></a>
     <a style="float: right" ng-click="register.helps();" ><i><b>HElP</b></i></a>
 </footer>
+</div>
 <script type="text/javascript">	if(typeof wabtn4fg==="undefined")	{wabtn4fg=1;h=document.head||document.getElementsByTagName("head")[0],s=document.createElement("script");s.type="text/javascript";s.src="http://your-domain.tld/path/whatsapp-button.js";h.appendChild(s)}</script>
 </body>
