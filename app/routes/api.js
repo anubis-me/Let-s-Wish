@@ -11,8 +11,9 @@ module.exports = function (router) {
         wishing.counter  = req.body.counter;
         wishing.views    = req.body.views;
         wishing.fest     = req.body.fest;
+        wishing.uname    = req.body.uname;
 
-        if (req.body.messages === null || req.body.messages === '' || req.body.views === null || req.body.views === 0 || req.body.choice === null || req.body.choice === '' || req.body.counter === 0 || req.body.counter === null || req.body.fest === '' || req.body.fest === null )
+        if (req.body.messages === null || req.body.messages === '' || req.body.views === null || req.body.views === 0 || req.body.choice === null || req.body.choice === '' || req.body.counter === 0 || req.body.counter === null || req.body.fest === '' || req.body.fest === null|| req.body.uname === '' || req.body.uname === null )
         {
             res.json({success: false, message: 'Ensure all the details were provided'});
         }
@@ -54,7 +55,7 @@ module.exports = function (router) {
     });
     //For getting message
     router.post('/message',function (req,res) {
-        wish.findOne({counter:req.body.counter}).select('counter views fest messages').exec(function (err,wishing) {
+        wish.findOne({counter:req.body.counter}).select('counter views fest uname messages').exec(function (err,wishing) {
             if(err){
                 res.json({success:false, message:err});
             }
@@ -65,7 +66,7 @@ module.exports = function (router) {
                 else{
                     wishing.views = parseInt(wishing.views,10)+1;
                     wishing.save();
-                    res.json({success: true, messages:wishing.messages, views:wishing.views, fest:wishing.fest, counter:wishing.counter });
+                    res.json({success: true, messages:wishing.messages,uname:wishing.uname, views:wishing.views, fest:wishing.fest, counter:wishing.counter });
                 }
             }
         });

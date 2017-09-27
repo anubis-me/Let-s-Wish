@@ -7,13 +7,15 @@ angular.module('wishController',['wishService'])
         var app = this;
         //input counter fest type message
         this.regwish = function (regdata) {
-            app.regdata.views = "1";
-            app.regdata.counter = Math.round((Math.random() * 1000000000000000) * 8);
+            app.regdata.views = "0";
+            app.regdata.uname = app.regdata.counter;
+            app.regdata.counter = "-*"+app.regdata.counter+"*#" + Math.round(Math.random() * 100);
             wishing.create(app.regdata).then(function (data) {
                 app.successmsg = false;
                  if (data.data.success) {
                     app.successmsg = "Your wish has been created now you can share it.";
                     app.pub_url = "wish4you.ga/"+data.data.choice+"?counter="+data.data.counter;
+                    app.whatsapp_url = " wish4you.ga/"+data.data.choice+"?counter="+data.data.counter;
                   }
                 else {
 
@@ -43,6 +45,7 @@ angular.module('wishController',['wishService'])
                     app.wishtype  = data.data.fest;
                     app.wishmsg   = data.data.messages;
                     app.views_num = data.data.views;
+                    app.uname     = data.data.uname;
                 }
                 else{
                     $location.path('/createwish');
@@ -60,3 +63,4 @@ angular.module('wishController',['wishService'])
             $location.path('/help');
         }
     });
+

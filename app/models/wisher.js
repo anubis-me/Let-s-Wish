@@ -13,7 +13,8 @@ var WishSchema = new Schema({
     choice     : { type: String, required: true },
     counter    : { type: String, required: true },
     views      : { type: String, required: true ,default:"1"},
-    fest       : { type: String, required: true }
+    fest       : { type: String, required: true },
+    uname      : { type: String, required: true }
 });
 
 // Mongoose Plugin to change fields to title case after saved to database (ensures consistency)
