@@ -16,7 +16,7 @@ angular.module('wishController',['wishService'])
                 if (data.data.success) {
                     app.successmsg = "Your wish has been created now you can share it.";
                     app.pub_url = "wish4you.ga/"+data.data.choice+"?counter="+data.data.counter;
-                    app.whatsapp_url = "👌 Awesome app to earn money by sending wishes. 😍 Wish4you.ga/"+data.data.choice+"?counter="+data.data.counter;
+                    app.whatsapp_url = "👌 An app to send wish to your dear ones in a unique way. 😍 Wish4you.ga/"+data.data.choice+"?counter="+data.data.counter;
                 }
                 else {
 
