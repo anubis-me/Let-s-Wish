@@ -38,8 +38,10 @@ var app=angular.module('playerRoute',['ngRoute'])
                 controller  :'createCtrl',
                 controllerAs: 'register'
             })
-            .when('/typelol',{
-             temlateUrl: 'app/views/type/type5.html'
+            .when('/typevit',{
+                templateUrl: 'app/views/type/type5.html',
+                controller  :'createCtrl',
+                controllerAs: 'register'
             })
 
             .when('/help',{

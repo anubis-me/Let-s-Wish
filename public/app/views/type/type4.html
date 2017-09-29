@@ -1,8 +1,7 @@
-
 <html><head>
+    <link rel="stylesheet" type="text/css" href="assets/css/sample.css">
 
     <style>
-
         @-webkit-keyframes jello {  from, 11.1%, to {    transform: none;  }
             22.2% {    transform: skewX(-12.5deg) skewY(-12.5deg);  }
             33.3% {    transform: skewX(6.25deg) skewY(6.25deg);  }
@@ -11,24 +10,38 @@
             66.6% {    transform: skewX(-0.78125deg) skewY(-0.78125deg);  }
             77.7% {    transform: skewX(0.390625deg) skewY(0.390625deg);  }
             88.8% {    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);  }}
-        .jello {  -webkit-animation: jello 3s infinite;  transform-origin: center; -webkit-animation-delay:6s}
+         .jello {  -webkit-animation: jello 3s infinite;  transform-origin: center; -webkit-animation-delay:6s}
         @-webkit-keyframes hue {
             from {    -webkit-filter: hue-rotate(0deg);  }
             to {    -webkit-filter: hue-rotate(-360deg);  }}
         .m1{position:fixed;left:1%; width:auto;height:100%;top:1%;color:#000;}
         .m2{position:fixed;right:1%; width:auto;height:100%;top:1%;color:#000;}
-        .diffuse-light{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;border:0;font:normal 23px/normal "Comic Sans MS",cursive,sans-serif;color:black;text-align:center;-o-text-overflow:clip;text-overflow:clip;text-shadow:0 15px 29px rgba(0,0,0,0.0980392),10px 20px 5px rgba(0,0,0,0.0470588),-10px 20px 5px rgba(0,0,0,0.0470588);-webkit-transition:all 200ms cubic-bezier(0.42,0,0.58,1) 10ms;-moz-transition:all 200ms cubic-bezier(0.42,0,0.58,1) 10ms;-o-transition:all 200ms cubic-bezier(0.42,0,0.58,1) 10ms;transition:all 200ms cubic-bezier(0.42,0,0.58,1) 10ms}.diffuse-light:hover{font:normal 24px/normal Verdana,Geneva,sans-serif;text-shadow:0 -15px 29px rgba(0,0,0,0.0980392),10px -20px 5px rgba(0,0,0,0.0470588),-10px -20px 5px rgba(0,0,0,0.0470588)}
+        .diffuse-light{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;
+            border:0;font:normal 23px/normal "Comic Sans MS",cursive,sans-serif;color:cyan;text-align:center;
+            -o-text-overflow:clip;text-overflow:clip;text-shadow:0 15px 29px rgba(0,0,0,0.0980392),10px 20px 5px rgba(0,0,0,0.0470588),-10px 20px 5px rgba(0,0,0,0.0470588);
+            -webkit-transition:all 200ms cubic-bezier(0.42,0,0.58,1) 10ms;-moz-transition:all 200ms cubic-bezier(0.42,0,0.58,1) 10ms;
+            -o-transition:all 200ms cubic-bezier(0.42,0,0.58,1) 10ms;transition:all 200ms cubic-bezier(0.42,0,0.58,1) 10ms}
+        .diffuse-light:hover{font:normal 24px/normal Verdana,Geneva,sans-serif;text-shadow:0 -15px 29px rgba(0,0,0,0.0980392),10px -20px 5px rgba(0,0,0,0.0470588),-10px -20px 5px rgba(0,0,0,0.0470588)}
     </style>
 </head>
 
-<body class="bg" id="Dussehra">
+<body >
 
-    <div class="container">
+    <div class="container" style="background-color: black;">
 
                 <div class="row" style="height: 700px;">
 
+                    <div class="area" style="padding-bottom: 5px;" >{{register.wishtype}}</div>
+                    <div ng-show="!register.loadmsg">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
 
-                        <p class="center" style="margin-top: 50px;">
+                    <p class="center" style="margin-top: -50px;">
                                     <img class="diwali" style="margin: 0 auto;display: block;" src="assets/images/hdus.png" height="280px" width="100%"/>
                                     <img class="diwali" style="margin: 0 auto;display: block;" src="assets/images/hdus1.png" height="260px" width="100%"/>
 
@@ -43,21 +56,100 @@
                     -->
                     <div>
 
-                        <div ng-show="register.loadmsg" style="text-align:center;margin-top: 250px;">
+                        <div ng-show="register.loadmsg" style="text-align:center;margin-top: 280px;">
                             <button class="button" style="margin-left:auto;margin-right:auto;text-align:center;background-color:#f39c12;color:black;border-color:#2c3e50" ng-click="register.routechange();">
                                 <h3><b>Click to create wish</b></h3>
                             </button>
                         </div>
                     <div ng-show="!register.loadmsg" style="text-align:center;">
-                            <button class="button" style="margin-left:auto;margin-right:auto;text-align:center;background-color:#f39c12;color:black;border-color:#2c3e50" ng-click="register.mupdate();">
+                            <button  onclick='responsiveVoice.speak("Happy Dusshera in Advance");' type='button' value='🔊 Play'  class="button" style="margin-left:auto;margin-right:auto;text-align:center;background-color:#f39c12;color:black;border-color:#2c3e50" ng-click="register.mupdate();">
                                 <h2><b>Click Here To See</b></h2>
                             </button>
                         </div>
                         </p>
-
                     </div>
                 </div>
             </div>
+    <div class="pattern0 fireworks fire0">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern1 fireworks fire1">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern2 fireworks fire2">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern3 fireworks fire3">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern4 fireworks fire4">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern5 fireworks fire5">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern6 fireworks fire6">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern7 fireworks fire7">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern8 fireworks fire8">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern9 fireworks fire9">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern10 fireworks fire10">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern11 fireworks fire11">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern12 fireworks fire12">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern13 fireworks fire13">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern14 fireworks fire14">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern15 fireworks fire15">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern16 fireworks fire16">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern17 fireworks fire17">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern18 fireworks fire18">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
+    <div class="pattern19 fireworks fire19">
+        <div class="ring_1"></div>
+        <div class="ring_2"></div>
+    </div>
 
 <div class="navbar-fixed-bottom">
     <footer class="w3-container w3-teal w3-center w3-margin-top" style="background-color:#122b40!!important">
