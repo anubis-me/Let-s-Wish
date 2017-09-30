@@ -38,7 +38,7 @@ var app=angular.module('playerRoute',['ngRoute'])
                 controller  :'createCtrl',
                 controllerAs: 'register'
             })
-            .when('/typevit',{
+            .when('/type5',{
                 templateUrl: 'app/views/type/type5.html',
                 controller  :'createCtrl',
                 controllerAs: 'register'
