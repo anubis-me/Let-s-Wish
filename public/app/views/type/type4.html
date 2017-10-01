@@ -30,7 +30,7 @@
 
                 <div class="row" style="height: 700px;">
 
-                    <div class="area" style="padding-bottom: 5px;" >{Belated {register.wishtype}}</div>
+                    <div class="area" style="padding-bottom: 5px;" >Belated {{register.wishtype}}</div>
                     <div ng-show="!register.loadmsg">
                         <br>
                         <br>
@@ -46,13 +46,7 @@
 
 
                     <div class="diffuse-light" style="margin-top: -340px;">{{register.wishmsg}} -{{register.uname}}</div>
-                  <!--  <div style="width:100%;height:auto;margin-top:20px">
-                        <div style="margin:0 auto;text-align:center">
-                           {{register.wishmsg}}
-                        </div>
-                    </div>
 
-                    -->
                     <div>
 
                         <div ng-show="register.loadmsg" style="text-align:center;margin-top: 50px;">
@@ -161,6 +155,6 @@
         <a ng-click="register.routechan();"><i><b>webbern</b></i></a>
         <a style="float:right" ng-show="register.loadmsg"><b>{{register.uname}}:<i>{{register.views_num}}</b></i></a>
     </footer>
-
+</div>
 </body>
 </html>

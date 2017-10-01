@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Water Theme </title>
+    <meta name = "viewport" contenttt = "width=device-width,initial-scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/water.css">
+</head>
+<style>
+    body{
+        background-color:#2ab7a9;.
+    }
+</style>
+<body>
+<div id = "contenttt">
+    <div id = 'wrap'>
+        <div id = 'text'>
+            <h1>{{register.wishtype}}</h1>
+            <div id = "dot">
+            </div>
+        </div>
+        <div ng-show="!register.loadmsg" style="text-align:center;margin-top: 150px;">
+            <button   class="button" style="margin-left:auto;margin-right:auto;text-align:center;background-color:#f39c12;color:black;border-color:#2c3e50" ng-click="register.mupdate();" onclick='responsiveVoice.speak("Have a nice day");' type='button' value='🔊 Play' >
+                <h2><b>Click Here To See</b></h2>
+            </button>
+        </div>
+        <div id ="message1">
+            <p style="font-size:15px;"><b>{{register.wishmsg}}</b></p>
+             <p style="margin-left: auto;margin-right: auto;font-size:18px;">{{register.uname}}</p>
+        </div>
+        <div ng-show="register.loadmsg">
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div id = "image" style="margin-top: -150px;">
+            <img src = "assets/images/fullwave.png">
+        </div>
+
+    </div>
+    <div ng-show="register.loadmsg" style="text-align:center;">
+        <button class="button" style="margin-left:auto;margin-right:auto;text-align:center;background-color:#f39c12;color:black;border-color:#2c3e50" ng-click="register.routechange();">
+            <h3><b>Click to create wish</b></h3>
+        </button>
+    </div>
+</div>
+
+<div class="navbar-fixed-bottom">
+    <footer class="w3-container w3-teal w3-center w3-margin-top" style="background-color:#122b40!!important">
+        <a href="https://www.facebook.com/abhinav3006gupta" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/abhinav_qp/" target="_blank"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://www.snapchat.com/add/abhinav3006gu" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+        <a href="https://twitter.com/Abhi_now3006" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/abhinav-gupta-774a3512a/"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <a ng-click="register.routechan();"><i><b>webbern</b></i></a>
+        <a style="float:right" ng-show="register.loadmsg"><b>{{register.uname}}:<i>{{register.views_num}}</b></i></a>
+    </footer>
+</div>
+
+</body>
+</html>
