@@ -2,7 +2,7 @@
  * Created by abhi on 24-Sep-17.
  */
 angular.module('wishController',['wishService'])
-
+    
     .controller('createCtrl',function ($http,$timeout,$location,wishing) {
         var app = this;
         //input counter fest type message
@@ -16,7 +16,7 @@ angular.module('wishController',['wishService'])
                 if (data.data.success) {
                     app.successmsg = "Your wish has been created now you can share it.";
                     app.pub_url = "wish4you.ga/"+data.data.choice+"?counter="+data.data.counter;
-                    app.whatsapp_url = "*Unique way to send wishes to your dear ones*  😍 http://Wish4you.ga/"+data.data.choice+"?counter="+data.data.counter;
+                    app.whatsapp_url = "*Unique way to send wishes to your dear ones in your own language*  😍 http://Wish4you.ga/"+data.data.choice+"?counter="+data.data.counter;
                 }
                 else {
 
