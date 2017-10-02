@@ -2,7 +2,7 @@
  * Created by abhi on 24-Sep-17.
  */
 angular.module('wishController',['wishService'])
-    
+
     .controller('createCtrl',function ($http,$timeout,$location,wishing) {
         var app = this;
         //input counter fest type message

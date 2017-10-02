@@ -43,6 +43,11 @@ var app=angular.module('playerRoute',['ngRoute'])
                 controller  :'createCtrl',
                 controllerAs: 'register'
             })
+            .when('/type6',{
+                templateUrl: 'app/views/type/type6.html',
+                controller  :'createCtrl',
+                controllerAs: 'register'
+            })
 
             .when('/help',{
                 templateUrl: 'app/views/pages/about.html'

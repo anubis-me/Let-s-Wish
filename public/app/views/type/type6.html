@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>Birthday</title>
+    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+    <link rel = "stylesheet" href="assets/css/birthday.css">
+    <style>
+        body{
+            background-color:#ffccbc;
+            animation-name: change-back12;
+            animation-timing-function: ease-in-out;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+
+</head>
+<body id ="prop">
+<div id = "container">
+    <div id = "wrap1">
+        <div id  = "text1">
+            <h2 style="margin-left: 15px;">{{register.wishtype}}</h2>
+        </div>
+        <div ng-show="!register.loadmsg">
+            <br>
+            <br>
+            <br>
+
+        </div>
+        <div id = "message1">
+            <p style="font-size:18px;margin-top: 25px;">{{register.wishmsg}}</p>
+            <p style="margin-right: 20px;font-size:18px;"><b>{{register.uname}}</b></p>
+
+            <button ng-show="!register.loadmsg" class="button" style="margin-left:auto;margin-right:auto;margin-top:50px;text-align:center;background-color:#f39c12;color:black;border-color:#2c3e50" ng-click="register.mupdate();" onclick='responsiveVoice.speak("Happy Birthday");' type='button' value='🔊 Play' >
+                <h2><b>Click Here To See</b></h2>
+                </button>
+        </div>
+        <div id = "cake">
+            <img src = "assets/images/cake.png">
+        </div>
+        <div id = "balloon1">
+            <img src="assets/images/balloon.png">
+        </div>
+        <div id = "balloon1-2">
+            <img src="assets/images/balloon.png">
+        </div>
+        <div id = "light-one"   class = "light-common"></div>
+        <div id = "light-two"   class = "light-common"></div>
+        <div id = "light-three" class = "light-common"></div>
+        <div id = "light-four"  class = "light-common"></div>
+        <div id = "light-five"  class = "light-common"></div>
+
+    </div>
+
+</div>
+<div ng-show="register.loadmsg" style="text-align:center;margin-top: -50px;" >
+    <button class="button" style="margin-left:auto;margin-right:auto;text-align:center;background-color:#f39c12;color:black;border-color:#2c3e50" ng-click="register.routechange();">
+        <h3><b>Click to create wish</b></h3>
+    </button>
+</div>
+
+<div class="navbar-fixed-bottom">
+    <footer class="w3-container w3-teal w3-center w3-margin-top" style="background-color:#122b40!!important">
+        <a href="https://www.facebook.com/abhinav3006gupta" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/abhinav_qp/" target="_blank"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://www.snapchat.com/add/abhinav3006gu" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+        <a href="https://twitter.com/Abhi_now3006" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/abhinav-gupta-774a3512a/"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <a ng-click="register.routechan();"><i><b>webbern</b></i></a>
+        <a style="float:right" ng-show="register.loadmsg"><b>{{register.uname}}:<i>{{register.views_num}}</b></i></a>
+    </footer>
+</div>
+
+
+</body>
+
+</html>

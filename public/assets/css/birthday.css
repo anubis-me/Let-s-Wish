@@ -1,0 +1,274 @@
+#prop{
+   font-family: "comic Sans-Ms",cursive,sans-serif;
+}
+@keyframes change-back12{
+    0%{background:url(../images/blur-1.jpg);
+        background-size: cover;
+
+    }
+    50%{background: url(../images/blur.jpg);
+        background-size: cover;
+
+    }
+}
+#container{
+    margin: auto;
+    margin-top: 50px;
+    width: 800px;
+    height: 600px;
+    background: url(../images/blur-1.jpg);
+    background-size: cover;
+    display: block;
+    box-shadow: 0px 15px 30px gray;
+    border: 1px solid transparent;
+    animation-name: change-back12;
+    animation-timing-function: ease-in-out;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+}
+
+@media only screen and (max-width:500px), screen and (max-height:500px){
+
+    #container{
+        width: 100%;
+        height: 500px;
+        box-shadow: 0px 15px 30px gray;
+    }
+}
+#wrap1{
+
+    width: 80%;
+    height: 70%;
+    position: relative;
+    top: 5%;
+    margin: auto;
+    border: 1px solid transparent;
+
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+
+    #wrap1{
+        width: 100%;
+        height: 70%;
+    }
+}
+#text1{
+    margin: auto;
+    display: block;
+    box-shadow: 0 20px 45px orange;
+    border: 1px solid transparent;
+    text-align: center;
+    width: 300px;
+    color:yellow;
+    text-shadow: 2px 2px 20px blue;
+    border-radius: 50%;
+
+
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+
+    #text1{
+        width: 50%;
+        height: auto;
+
+    }
+}
+#cake{
+    width: 35%;
+    height: 35%;
+    margin: auto;
+    position: absolute;
+    top: 68%;
+    left: 32%;
+    display: block;
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+    #cake {
+        position: absolute;
+        top:87%;
+        width: 38%;
+        height: 35%;
+
+
+    }
+}
+#cake img{
+    width: 100%;
+    height: 100%;
+
+}
+
+#balloon1{
+
+    width: 15%;
+    height: 20%;
+    margin: auto;
+    position: absolute;
+    top: -3%;
+    left: 70%;
+    display: block;
+    transform: rotate(22deg);
+
+
+
+}
+#balloon1 img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width:500px), screen and (max-height:500px){
+    #balloon1 {
+        width: 20%;
+        height: 25%;
+        transform: rotate(18deg);
+
+    }
+}
+
+#balloon1-2{
+
+    width: 15%;
+    height: 20%;
+    margin: auto;
+    position: absolute;
+    top: -3%;
+    left: 15%;
+    display: block;
+    transform: rotate(22deg);
+}
+#balloon1-2 img{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+
+    #balloon1-2{
+        width: 20%;
+        height: 25%;
+        transform: rotate(-18deg);
+
+    }
+}
+#message1{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top:1%;
+    box-shadow: 3px 10px 20px orange;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border:7px solid transparent;
+    border-image:url(../images/border.jpg) 10 round;
+    color:chartreuse;
+    font-size: 20px;
+
+
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+
+    #message1{
+        text-align: center;
+        height: 80%;
+        width: 90%;
+
+    }
+}
+@keyframes candle{
+    from{background-color: yellow;}
+    to{background-color: orange;}
+}
+.light-common{
+    background-color: yellow;
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    position: absolute;
+    animation-name: candle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    box-shadow: 0 5px 10px red;
+
+}
+#light-one{
+
+    bottom: 32%;
+    left: 47%;
+
+}
+#light-two{
+
+    position: absolute;
+    bottom: 28%;
+    left: 35%;
+
+}
+#light-three{
+
+    bottom: 24%;
+    left: 42%;
+
+}
+#light-four{
+
+    bottom: 24%;
+    left: 52%;
+
+}
+#light-five{
+
+    bottom: 28%;
+    left: 58%;
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+    #light-one{
+        position: absolute;
+        top: 100%;
+
+    }
+
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+    #light-one{
+        position: absolute;
+        top: 82%;
+
+    }
+
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+    #light-two{
+        position: absolute;
+        top: 86%;
+
+    }
+
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+    #light-three{
+        position: absolute;
+        top: 90%;
+
+    }
+
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+    #light-four{
+        position: absolute;
+        top: 90%;
+
+    }
+
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+    #light-five{
+        position: absolute;
+        top: 85%;
+
+    }
+
+}
