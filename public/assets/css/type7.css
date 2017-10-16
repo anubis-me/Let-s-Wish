@@ -1,0 +1,255 @@
+body{
+    font-family: "Arial",Helvetica,sans-serif;
+    font-weight: normal;
+
+    background-color:#fec503;
+
+}
+#container12{
+
+    margin: 50px;
+    width: 800px;
+    height: 600px;
+    background:url(../images/background.jpg);
+    background-size: cover;
+    display: block;
+    box-shadow: 0px 15px 30px gray;
+    border: 1px solid transparent;
+
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+
+    #container12{
+        width: 100%;
+        margin-left: 0px;
+        height: 500px;
+
+    }
+}
+#wrap12{
+
+    width: 80%;
+    height: 90%;
+    position: relative;
+    top: 5%;
+    margin: auto;
+    border: 1px solid transparent;
+    box-shadow: 2px 20px 30px black;
+    background: url(../images/image5145.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+
+    #wrap12{
+        width: 95%;
+        height: 85%;
+
+    }
+}
+
+#text12{
+    margin: auto;
+    display: block;
+    border: 1px solid transparent;
+    text-align: center;
+    width: 300px;
+    color:orange;
+    text-shadow: 0 2px 20px black;
+    box-shadow: 5px 7px 10px #fdde72;
+    animation-name: background;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+
+
+    #text12{
+        width: 70%;
+        height: auto;
+
+    }
+}
+@keyframes background{
+    from{
+        background:url(../images/laxmi-coin.gif);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+    to{
+        background:url(../images/lotus.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-shadow: 3px 2px 0px black;
+
+    }
+}
+#message12{
+    display: flex;
+    position: relative;
+    top:1%;
+    width: 100%;
+    height: 80%;
+    background-size: contain;
+    text-align: center;
+    font-size: 25px;
+    color:white;
+    text-shadow: 10px 2px 20px black;
+
+
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+
+    #message12{
+        text-align: center;
+        height: 80%;
+        width: 100%;
+    }
+}
+#image-down1{
+
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    bottom:2%;
+    display: block;
+
+
+}
+#image-down1 img{
+    width: 100%;
+    height:100%;
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+
+    #image-down1{
+
+        width: 70%;
+        position: absolute;
+        left: 15%;
+        bottom:2%;
+
+
+    }
+}
+#shine1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    opacity: 0.5;
+    position: absolute;
+    left: 41%;
+    bottom: 20%;
+    animation-name: shine1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes shine1{
+    from{
+        background-color: transparent;
+    }
+    to{
+        background-color:yellow;
+    }
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+    #shine{
+        position: absolute;
+        left: 34%;
+    }
+
+}
+#lotus{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    bottom: 80%;
+    left: 70%;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@media only screen and (max-width:500px), screen and (max-height:500px){
+    #lotus{
+        position: absolute;
+        left: 72%;
+        bottom: 78%;
+        width: 25%;
+        height: 18%;
+    }
+}
+.f{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffe559;
+    animation-name: flip;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    box-shadow: 0 0px 10px black;
+
+}
+@keyframes flip{
+
+    from{
+        bottom: 90%;
+        transform: rotateX(180deg);
+        visibility: visible;
+
+
+
+    }
+    to{
+        bottom:10%;
+        transform: rotateX(-90deg);
+
+
+    }
+}
+#coin-flip{
+
+    position: absolute;
+    bottom: 70%;
+    left: 75%;
+}
+
+
+#coin-flipp{
+
+    position: absolute;
+    bottom: 85%;
+    left: 65%;
+    animation-delay: 1s;
+    visibility: hidden;
+
+}
+#coin-flip-1{
+    position: absolute;
+    bottom: 85%;
+    left: 20%;
+    animation-delay: 2s;
+    visibility: hidden;
+}
+#coin-flip-2{
+    position: relative;
+    bottom: 85%;
+    left: 10%;
+    animation-delay: 3s;
+    visibility:hidden;
+}
