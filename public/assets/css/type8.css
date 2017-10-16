@@ -1,13 +1,14 @@
 body{
     font-family: "Arial",Helvetica,sans-serif;
     font-weight: normal;
+    background-color:#fec503;
 }
-#container{
+#container12{
 
     margin: auto;
     width: 800px;
     height: 600px;
-    background:url(background.jpg);
+    background:url(../images/background.jpg);
     background-size: cover;
     display: block;
     box-shadow: 0px 15px 30px gray;
@@ -16,25 +17,25 @@ body{
 }
 @media only screen and (max-width:500px), screen and (max-height:500px){
 
-    #container{
+    #container12{
         width: 100%;
-        height: 100%;
+        height: 500px;
 
     }
 }
 @keyframes transition{
     from{
-        background:url(rupee.png);
+        background:url(../images/rupee.png);
         background-size: contain;
         background-repeat: no-repeat;
     }
     to {
-        background:url(gandhi.png);
+        background:url(../images/gandhi.png);
         background-size: contain;
         background-repeat: no-repeat;
     }
 }
-#wrap{
+#wrap12{
     width: 80%;
     height: 90%;
     position: relative;
@@ -42,7 +43,7 @@ body{
     margin: auto;
     border: 1px solid transparent;
     box-shadow: 2px 20px 30px black;
-    background: url(gandhi.png);
+    background: url(../images/gandhi.png);
     background-size: contain;
     background-repeat: no-repeat;
     animation-name: transition;
@@ -52,13 +53,13 @@ body{
 }
 @media only screen and (max-width:500px), screen and (max-height:500px){
 
-    #wrap{
+    #wrap12{
         width: 95%;
         height: 85%;
         background-position: left;
     }
 }
-#text{
+#text12{
     margin: auto;
     display: block;
     border: 1px solid transparent;
@@ -80,10 +81,10 @@ body{
 }
 @media only screen and (max-width:500px), screen and (max-height:500px){
 
-    #text{
-        width: 50%;
+    #text12{
+        width: 75%;
         height: auto;
-
+        background-color: #fec503;
     }
 }
 @keyframes rotate{
@@ -95,7 +96,7 @@ body{
         transform: rotate(-20deg);
     }
 }
-#message{
+#message12{
     display: flex;
     position: relative;
     top:1%;
@@ -114,7 +115,7 @@ body{
 
     width: 20%;
     height: 20%;
-    background:url(unnamed.png);
+    background:url(../images/unnamed.png);
     background-repeat: no-repeat;
     position: absolute;
     bottom: 1%;
