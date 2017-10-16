@@ -265,6 +265,50 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Let-s-Wish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Let-s-Wish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Let-s-Wish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Let-s-Wish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -316,17 +360,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\abhi\Desktop\Let-s-Wish\public\assets\images" />
+      <recent name="C:\Users\abhi\Desktop\Let-s-Wish\public\assets" />
+      <recent name="C:\Users\abhi\Desktop\Let-s-Wish\public\assets\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\abhi\Desktop\Let-s-Wish\public\assets\images" />
       <recent name="C:\Users\abhi\Desktop\Let-s-Wish\public\assets\css" />
       <recent name="C:\Users\abhi\Desktop\Let-s-Wish\public\app\views\pages" />
       <recent name="C:\Users\abhi\Desktop\Let-s-Wish\public\app\views\type" />
       <recent name="C:\Users\abhi\Desktop\Let-s-Wish\public\assets\js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\abhi\Desktop\Let-s-Wish\public\assets\images" />
-      <recent name="C:\Users\abhi\Desktop\Let-s-Wish\public\assets" />
-      <recent name="C:\Users\abhi\Desktop\Let-s-Wish\public\assets\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -434,12 +478,12 @@
       <workItem from="1506854984286" duration="656000" />
       <workItem from="1506873155668" duration="1696000" />
       <workItem from="1506957059565" duration="6629000" />
-      <workItem from="1508047934070" duration="1606000" />
+      <workItem from="1508047934070" duration="2039000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110487000" />
+    <option name="totallyTimeSpent" value="110920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="0" width="1376" height="745" extended-state="0" />
